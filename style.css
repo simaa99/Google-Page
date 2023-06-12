@@ -1,0 +1,82 @@
+/*Add universal styling for the google page */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  direction: ltr;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+nav {
+  display: flex;
+  padding: 6px;
+}
+
+nav > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 15px;
+  padding: 0px 4px 0px 32px;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+nav > ul > li:nth-child(1) > a,
+nav > ul > li:nth-child(2) > a {
+  font-size: 0.9rem;
+}
+
+nav > ul > li:nth-child(1) > a:hover,
+nav > ul > li:nth-child(2) > a:hover {
+  text-decoration: underline;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.list-icon > a {
+  color: #5f6368;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: transparent;
+  justify-content: center;
+  padding: 0.3rem;
+  border-radius: 50%;
+}
+
+.list-icon > a:hover {
+  background-color: #5f63681e;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.profile-img {
+  width: 2rem;
+  height: 2rem;
+}
+.profile-img > a {
+  color: #5f6368;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #d5d6d6;
+  cursor: pointer;
+  padding: 0.2rem;
+}
+.profile-img > a > img {
+  width: 100%;
+  height: 100%;
+}
